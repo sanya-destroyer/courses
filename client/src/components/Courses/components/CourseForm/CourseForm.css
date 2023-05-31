@@ -1,0 +1,123 @@
+.create-course {
+    font-size: 20px;
+    gap: 1.25em;
+}
+
+.course-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.course-form-title {
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+
+    margin-bottom: 1.5em;
+}
+
+.course-form-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25em;
+}
+
+.course-form-head-input {
+}
+
+.course-form-head-buttons {
+    align-self: flex-end;
+    display: flex;
+    gap: 1em;
+}
+
+.course-form-description {
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.course-form-description-label {
+
+}
+
+.course-form-description-input {
+    font-size: 1em;
+    resize: none;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 1em;
+    padding: 1em .75em;
+}
+
+.course-form-description-input:focus {
+    box-shadow: 0 0 5px rgba(0,0,0, 0.54);
+}
+
+.course-form-grid {
+    border: 1px solid rgba(0,0,0, 0.54);
+    border-radius: 1em;
+    padding: 2em 1em;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em 3em;
+}
+
+.course-form-create {
+
+}
+
+.course-form-create-input {
+    margin-bottom: 1em;
+}
+
+.course-form-create-button {
+    text-align: center;
+}
+
+.course-form-authors {
+}
+
+.course-form-authors-items {
+    display: flex;
+    flex-direction: column;
+    gap: .75em;
+}
+
+.course-form-author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .75em;
+}
+
+.course-form-author-name {
+
+}
+
+.course-form-author-button {
+
+}
+
+.course-form-duration {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.course-form-duration-input {
+
+}
+
+.course-form-duration-value {
+    font-size: 1.1em;
+}
+
+.course-form-duration-bold {
+    font-size: 1.3em;
+    font-weight: bold;
+}

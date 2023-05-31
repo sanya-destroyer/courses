@@ -1,0 +1,71 @@
+
+.form {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 540px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.form-title {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-input {
+    position: relative;
+}
+
+.form-button {
+    text-align: center;
+}
+
+.form-info {
+
+}
+
+.form-password-toggle {
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1.25em;
+
+    cursor: pointer;
+}
+
+.form-fieldset-errored {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-fieldset-errored-input {
+    position: relative;
+    flex-grow: 1;
+}
+
+.form-errors {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.form-error {
+    font-size: .65em;
+    color: red;
+}
+
+.form-error:first-letter {
+    text-transform: capitalize;
+}
+
+.form-error:before {
+    content: '*';
+    color: red;
+    display: inline-block;
+    margin-right: .5em;
+}

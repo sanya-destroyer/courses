@@ -1,0 +1,33 @@
+.App {
+    height: 100%;
+    padding: 1em 1.25em;
+}
+
+.main {
+    position: relative;
+    flex-grow: 1;
+
+    border: 2px solid #8ad6f5;
+    box-shadow: 0 0 5px #8ad6f5;
+    border-radius: 2em;
+
+    padding: 2.5em 1.75em;
+}
+
+.alerts {
+    position: fixed;
+    z-index: 3;
+
+    width: 100%;
+    max-width: 250px;
+
+    left: 50%;
+    top: 5%;
+
+    transform: translate(-50%);
+
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 25px;
+}
+

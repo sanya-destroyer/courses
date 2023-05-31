@@ -1,0 +1,91 @@
+/*.label {*/
+/*    display: block;*/
+/*    font-size: 1em;*/
+
+/*    margin-bottom: 0.5em;*/
+/*}*/
+
+/*.input {*/
+/*    flex: 0 1 calc(100% - 35px);*/
+/*    font-size: 1em;*/
+/*    width: 100%;*/
+/*    display: block;*/
+/*    border: 1px solid gold;*/
+
+/*    padding: .5em 1em;*/
+/*    padding-right: 2em;*/
+/*}*/
+
+/*.input:focus {*/
+/*    box-shadow: 0 0 5px rgba(0,0,0, .54);*/
+/*}*/
+
+input[type=number] {
+    -moz-appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.input-container {
+    font-size: 1em;
+    position: relative;
+    padding: 1em .5em;
+    overflow: hidden;
+}
+
+.input-container::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: rgba(144, 202, 249);
+
+    left: 50%;
+    bottom: 1em;
+
+    transition: left .2s ease-in-out, width .2s ease-in-out;
+}
+
+.input-container:has(.common-input:focus)::after {
+    width: calc(100% - 1em);
+    left: .5em;
+}
+
+.input {
+    display: block;
+    position: relative;
+    font-size: 1em;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.35);
+    padding: .3em 2em .3em 0;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input-label {
+    position: absolute;
+    text-overflow: ellipsis;
+    bottom: 1.45em;
+    left: 0.5em;
+    opacity: .55;
+    transition: transform .2s  0s ease;
+
+    white-space: nowrap;
+
+    cursor: text;
+}
+
+
+.input:focus + .input-label,
+.input:not(:placeholder-shown) + .input-label{
+    transform: translate(-15%, -120%) scale(.65);
+    opacity: 1;
+    color: black;
+}
+
